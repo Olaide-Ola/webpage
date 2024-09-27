@@ -1,0 +1,310 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+.header{
+	min-height:100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('classroom-2093744_1280.jpg');
+	background-size:cover;
+	background-position:center;
+	position:relative;
+}
+nav{
+	display:flex;
+	padding: 2% 6%;
+	place-content:space-around;
+	align-items:center;
+}
+nav img{
+	width:50px;
+}
+.nav-link{
+	flex:1;
+	text-align:right;
+}
+.nav-link ul li{
+	list-style-type:none;
+	display:inline-block;
+	padding:8px 12px;
+	position:relative;
+}
+
+.nav-link ul li a{
+	color:white;
+	text-decoration-line:none;
+	font-size:14px;
+}
+.nav-link ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background-color:red;
+	display:block;
+	margin:auto;
+	transition: all 0.3s linear;
+}
+
+.nav-link ul li:hover::after{
+	width:100%;
+}
+
+.text-box{
+	color:white;
+	width:90%;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+}
+.text-box h1{
+	font-size:20px;
+}
+.text-box p{
+	margin:10px 0 40px;
+	font-size:14px;
+}
+.hero-btn{
+	display:inline-block;
+	text-decoration-line:none;
+	color:#fff;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.hero-btn:hover{
+	background-color:#f44336;
+	transition:1s;
+}
+
+nav .fa{
+	display:none;
+}
+
+/* @media(max-width:700px){ */
+	/* .text-box h1{ */
+		/* font-size:20px; */
+	/* } */
+	/* .nav-link ul li{ */
+		/* display:block; */
+	/* } */
+	/* .nav-link{ */
+		/* position:abosolute; */
+		/* background:#f44336; */
+		/* height:100vh; */
+		/* width:200px; */
+		/* top:0; */
+		/* right:-200px; */
+		/* text-align:left; */
+		/* z-index:2; */
+	/* } */
+	/* nav .fa{ */
+		/* display:block; */
+		/* color:white; */
+		/* margin:10px; */
+		/* font-size:22px; */
+		/* cursor:pointer; */
+	/* } */
+	/* .nav-link ul{ */
+		/* padding:30px; */
+	/* } */
+/* } */
+
+.course{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}
+h1{
+	font-size:36px;
+	font-weight:600;
+}
+.course p{
+	color:#777;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+}
+.row{
+	display:flex;
+	margin:5% 0 0 0;
+	justify-content:space-between;
+}
+ .course-col{
+	 flex-basis:31%;
+	 background:#fff3f3;
+	 margin:0 0 5% 0;
+	 padding:20px 12px;
+	 box-sizing:border-box;
+ }
+
+.course-col h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+}
+
+.course-col:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+@media (max-width:700px){
+	.row{
+		flex-direction:column;
+	}
+	
+}
+.campus{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding:50px 0 0 0;
+}
+.campus-col{
+	flex-basis:32%;
+	border-radius:10px;
+	margin-bottom:30px;
+	position:relative;
+	overflow:hidden;
+}
+
+.campus-col img{
+	width: 100%;
+	display: block;
+}
+
+.layer{
+	position:absolute;
+	background: transparent;
+	top: 0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	transition: 0.3s;
+}
+.layer:hover{
+	background-color:rgba(225,0,0,0.4);
+}
+.layer h3{
+	width: 100%;
+	font-weight:500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 0;
+	transform: translateY(-50%);
+	position: absolute;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom:50%;
+	opacity: 1;
+}
+
+/* Facilities */
+
+.facilities{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}
+.facilities-col{
+	flex-basis:31%;
+	border-radius:10px;
+	margin-bottom: 5%;
+	text-align:left;
+}
+.facilities-col img{
+	width:100%;
+	border-radius:10px;
+}
+.facilities-col p{
+	padding:0;
+}
+.facilities-col h3{
+	margin:16px 0 15px 0;
+	text-align:left;
+}
+
+/* Testimonials */
+.testimonials{
+	width:80%;
+	margin: auto;
+	text-align: center;
+}
+.testimonials-col {
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align:left;
+	background: #fff3f3;
+	padding: 25px;
+	display: flex;
+}
+.testimonials-col img{
+	height: 40px;
+	margin:0 30px 0 5px;
+	border-radius: 50%;
+}
+.testimonials-col p{
+	padding:0;
+	text-align:left;
+}
+.testimonials-col .fa{
+	color:#f44336;
+}
+@media (max-width:700px){
+	.testimonials-col img{
+		margin:0 15px 0 0px;
+	}
+} 
+
+/* Call To Action */
+
+.cta{
+	margin:100px auto;
+	width:80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('sunset-7410852_1280.jpg');
+	background-position: center;
+	background-size: cover;
+	border-radius:10px;
+	text-align:center;
+	padding:100px 0;
+}
+.cta h1{
+	color:#fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+@media(max-width:700px){
+	.cta h1{
+		font-size:24px;
+	}
+}
+.footer{
+	width: 100%;
+	text-align:center;
+	padding:30px 0;
+}
+.footer h4{
+	margin:20px 0 25px 0;
+	font-weight:600;
+}
+
+.icons .fa{
+	color:#f44336;
+	margin:0 13px;
+	cursor:pointer;
+	padding:18px 0;
+}
+.fa-heart-o{
+	color:#f44336;
+}
