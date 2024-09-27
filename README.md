@@ -1,0 +1,1 @@
+This is a comprehensive code for a static webpage
